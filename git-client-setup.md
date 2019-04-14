@@ -8,7 +8,7 @@
 
 #### Install a Git client on your development computer
   * Example 1: [Visual Studio Code](https://code.visualstudio.com/download)
-  * Example 2: [Cygwin](https://cygwin.com/install.html) (64-bit) on Windows. Command line install string: `setup-x86_64.exe -q --packages="bash,bzip2,curl,git,nano,openssh,ssh,tar,wget,vim"`) 
+  * Example 2: [Cygwin](https://cygwin.com/install.html) (64-bit) on Windows. Command line install string: `setup-x86_64.exe -q --packages="bash,bzip2,curl,git,nano,openssh,qawk,ssh,tar,wget,vim"`) 
 
 ### Create an SSH key
 1. Open Terminal or Command Prompt and enter the following command string: `ssh-keygen -t rsa -C "username@domain.com" -b 4096`  
