@@ -1,10 +1,10 @@
 * Set the following global environment value to update the command prompt  
 `setx PROMPT [%USERNAME%@%COMPUTERNAME%$S$D$S$T$H$H$H]$_$M$_$P$G$S /M`  
-* Set the following global environment value to update the PATH for Cygwin  
+* Set the following global environment value to update the PATH for [Cygwin](https://cygwin.com/install.html)  
 `setx PATH "%PATH%;C:\cygwin64\bin" /M`  
-* Set the following global environment value to update the PATH for PSTools (32-bit)  
+* Set the following global environment value to update the PATH for [PSTools](https://docs.microsoft.com/en-us/sysinternals/downloads/pstools) (32-bit)  
 `setx PATH "%PATH%;C:\Program Files (x86)\PSTools\" /M`  
-* Set the following global environment value to update the PATH for PSTools (64-bit)  
+* Set the following global environment value to update the PATH for [PSTools](https://docs.microsoft.com/en-us/sysinternals/downloads/pstools) (64-bit)  
 `setx PATH "%PATH%;C:\Program Files\PSTools64\" /M`  
 * Call a command prompt from either `cmd.exe` or "`Command Prompt`" in Start window.  
 * Set the following properties in each instance:  
