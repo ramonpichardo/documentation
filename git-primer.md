@@ -21,3 +21,16 @@ Standard conventions for commit messages:
 - Written in the present tense  
 - Be brief (i.e., 50 characters or less)  
 ```
+
+### Backtracking
+
+* `git show HEAD` - In many cases, the most recently made commit is the `HEAD` commit. `HEAD` must be typed in uppercase. Type this command to see the `HEAD` commit. Take note of the 40-character alphanumeric SHA; or at least the first seven characters of that string.  
+* `git checkout HEAD <filename>` - Restore the file in your working directory to the last commit made.  
+* `git reset HEAD <filename>` - Unstage a file from the staging area. Useful for unwanted adds to the staging before a commit.  
+* `git reset <SHA>` - Rewind your project to a previous commit. For the SHA, use the first seven characters of the alphanumeric string.  
+```
+Notes:  
+- Run "git log" to view the Git commit log.  
+- The commits that came after the one you reset to are gone.  
+- The HEAD commit is reassigned to the reset-to commit. I.e., the HEAD designation is reassigned to a previously made commit of your choice.  
+
