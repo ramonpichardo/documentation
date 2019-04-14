@@ -43,3 +43,17 @@ Notes:
 * `git merge <branch_name>` - Include all changes made on another branch that is not "master". First, switch from the other branch to "master" branch. Then merge changes on another branch by invoking this command with the branch_name being the other branch's name that is not "master".  
 * `git branch -d <branch_name>` - Delete a branch named branch_name. This is usually done after a merge.  
 
+### Teamwork
+
+* `remote` - a shared Git repository that allows multiple collaborators to work on the same Git project from different locations.  
+* `git clone <remote_location> <clone_name>`  
+```
+Notes on git clone:
+- Creates a replica of a repo on your computer.  
+- Remote location can be a web address or a file path.  
+- Clone_Name is the name you give to the directory in which Git will clone the repo.  
+```
+* `git remote -v` - List the remotes of a Git project. Git automatically names the remote "origin" because it refers to the remote repo of origin. However, it is possible to safely change its name.  
+* `git fetch` - See of changes have been made to the remote and bring the changes down to your local copy. First '`cd`' to cloned directory. Then run `git fetch`.  
+* `git merge origin/master` - After new commits are fetched to your local copy those commits are on the origin/master branch. We will need to use git merge to integrate origin/master into the local master branch.  
+* `git push origin <branch_name>` - Push a local branch to the origin remote.  
