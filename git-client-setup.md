@@ -31,5 +31,3 @@
 6. Create alias: `git config --global alias.lr 'log --reverse'`  
 7. Set up pager to wrap lines: `git config core.pager 'less -r'`  
 
-### Clone a Repo
-Clone your shared network-based code repository by running the command `git clone git@servername.domainname.tld:IT/Operations.git  *`  
