@@ -29,6 +29,9 @@ E.g., `mkdir /home/username/working/`
 1. Change to working directory. E.g., `cd /home/username/working/`    
 2. While in working directory run the following command `git init`
 
+### Clone a Repo
+Clone your shared network-based code repository by running the command `git clone git@servername.domainname.tld:IT/Operations.git  *`  
+
 ### Backtracking
 
 * `git show HEAD` - In many cases, the most recently made commit is the `HEAD` commit. `HEAD` must be typed in uppercase. Type this command to see the `HEAD` commit. Take note of the 40-character alphanumeric SHA; or at least the first seven characters of that string.  
