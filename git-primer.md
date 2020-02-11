@@ -22,6 +22,9 @@ Standard conventions for commit messages:
 - Be brief (i.e., 50 characters or less)  
 ```
 
+### Create a local working directory on your development computer
+E.g., `mkdir /home/username/working/`  
+
 ### Backtracking
 
 * `git show HEAD` - In many cases, the most recently made commit is the `HEAD` commit. `HEAD` must be typed in uppercase. Type this command to see the `HEAD` commit. Take note of the 40-character alphanumeric SHA; or at least the first seven characters of that string.  
