@@ -25,6 +25,10 @@ Standard conventions for commit messages:
 ### Create a local working directory on your development computer
 E.g., `mkdir /home/username/working/`  
 
+### Initialize your local working directory
+1. Change to working directory. E.g., `cd /home/username/working/`    
+2. While in working directory run the following command `git init`
+
 ### Backtracking
 
 * `git show HEAD` - In many cases, the most recently made commit is the `HEAD` commit. `HEAD` must be typed in uppercase. Type this command to see the `HEAD` commit. Take note of the 40-character alphanumeric SHA; or at least the first seven characters of that string.  
