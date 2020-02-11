@@ -24,11 +24,12 @@
 
 ### Personalize Git client
 1. List configuration setting: `git config --list`  
-2. Set user name: `git config --global user.name "Patrick Jane"`  
-3. Set user e-mail address: `git config --global user.email "PatrickJ@acme.com"`  
-4. Set default code editor: `git config --global core.editor "vscode"`  
-5. Create alias: `git config --global alias.lr 'log --reverse'`  
-6. Set up pager to wrap lines: `git config core.pager 'less -r'`  
+2. Set credentials manager to "manager": `git config --global credential.helper manager`
+3. Set user name: `git config --global user.name "Patrick Jane"`  
+4. Set user e-mail address: `git config --global user.email "PatrickJ@acme.com"`  
+5. Set default code editor: `git config --global core.editor "vscode"`  
+6. Create alias: `git config --global alias.lr 'log --reverse'`  
+7. Set up pager to wrap lines: `git config core.pager 'less -r'`  
 
 ### Create a local working directory on your development computer
 E.g., `mkdir /home/username/working/`  
