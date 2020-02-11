@@ -31,9 +31,6 @@
 6. Create alias: `git config --global alias.lr 'log --reverse'`  
 7. Set up pager to wrap lines: `git config core.pager 'less -r'`  
 
-### Create a local working directory on your development computer
-E.g., `mkdir /home/username/working/`  
-
 ### Initialize your local working directory
 1. Change to working directory. E.g., `cd /home/username/working/`    
 2. While in working directory run the following command `git init`  
