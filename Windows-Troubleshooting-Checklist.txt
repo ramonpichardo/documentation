@@ -1,0 +1,84 @@
+ITSM Ticket #: 
+
+Customer: 
+
+Computer Name: 
+
+Make / Model: 
+
+BIOS: 
+
+Username: 
+Password: 
+Domain: 
+
+To Do List
+- Update BIOS
+- Update computer name
+- Delete old computer name from Active Directory
+- Update Microsoft Windows OS patches
+- Update VPN software
+- Remove Adobe Flash Player
+- Update Adobe Acrobat Reader
+- Update Apple QuickTime Player/Codecs
+- Update Java RE
+- Delete extra applications
+- Delete temp files
+- Check root of C: drive
+- Correct/verify paging file
+- Check Services.msc
+- Check Registry
+- Check MSConfig
+- Verify Admin account password is set to current password
+- Defrag HDD
+- Perform disk error check
+
+**********
+**********
+
+Q: Automatic Updates options are greyed out?
+
+http://support.microsoft.com/kb/326686
+
+When you open the Automatic Updates tab in My Computer Property sheet, or from Control Panel, all of the Automatic Updates configuration options may be grayed out. This happens due to any of the following reasons:
+
+   1. You're not logged on as Administrator (or equivalent)
+   2. Automatic Updates Policy is enabled
+   3. Automatic Updates (and Windows Update) access is blocked via Group Policy
+
+A: Resolution
+
+To make the Automatic Updates options configurable by the user (only for stand-alone systems), remove the restrictions 2 & 3 above.
+
+    * Click Start, Run and type REGEDIT.EXE
+    * Navigate to this location: 
+
+HKEY_LOCAL_MACHINE \ SOFTWARE \ Policies \ Microsoft \ Windows \ WindowsUpdate \ AU
+
+    * In the right-pane, delete the two values AUOptions and NoAutoUpdate
+    * Navigate to this location:
+
+HKEY_CURRENT_USER \ SOFTWARE \ Microsoft \ Windows \ CurrentVersion \ Policies \ WindowsUpdate
+
+    * In the right-pane, delete the value DisableWindowsUpdateAccess
+
+Using the Group Policy Editor - for Windows XP Professional
+
+    * Click Start, Run and type gpedit.msc
+    * Navigate to the following location: 
+
+    => Computer Configuration
+    ==> Administrative Templates
+    ===> Windows Components
+    ====> Windows Update
+
+    * In the right-pane, double-click Configure Automatic Updates and set it to Not Configured
+    * Then, navigate to this location: 
+
+    => User Configuration
+    ==> Administrative Templates
+    ===> Windows Components
+    ====>  Windows Update
+
+    * In the right-pane, set Remove access to all Windows Update features to Not Configured 
+
