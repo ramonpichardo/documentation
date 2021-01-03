@@ -2,17 +2,17 @@
 
 ### APP STACK
 
-| Type             | Name                          | Web Browser Extension |
-|:----------------:|:-----------------------------:|:---------------------:|
-| Code Tools       | Microsoft Visual Studio Code  | No                    |
-| Info Repository  | Microsoft OneNote             | No                    |
-| ITSM Tool        | Cherwell                      | No                    |
-| Package Manager  | Chocolatey                    | No                    |
-| Password Manager | LastPass, Password Manager XP | Yes                   |
-| Remote Manager   | Microsoft RSAT                | No                    |
-| SSO              | OneLogin                      | Yes                   |
-| System Support   | HP Support Assistant          | No                    |
-| Web Browser      | Microsoft Edge ("Edge-ium")   | No                    |
+| Type               | Name                          | Web Browser Extension |
+|:------------------:|:-----------------------------:|:---------------------:|
+| Code Tools         | Microsoft Visual Studio Code  | No                    |
+| Info Repository    | Microsoft OneNote             | No                    |
+| ITSM Tool          | Cherwell                      | No                    |
+| OEM System Support | HP Support Assistant          | No                    |
+| Package Manager    | Chocolatey                    | No                    |
+| Password Manager   | LastPass, Password Manager XP | Yes                   |
+| Remote Manager     | Microsoft RSAT                | No                    |
+| SSO                | OneLogin                      | Yes                   |
+| Web Browser        | Microsoft Edge ("Edge-ium")   | No                    |
 
 ### STEPS
 
