@@ -85,3 +85,8 @@ Open firewall ports as needed by either invoking the service name or a custom po
     $ sudo firewall-cmd --add-port=25565/tcp --permanent
     $ sudo firewall-cmd --reload
 
+### Confirm SELinux status
+RHEL sets SELinux to run in enforcing mode by default. Confirm the status is "Enforcing".
+
+    $ getenforce
+
