@@ -54,3 +54,9 @@ Download and install all available updates.
 After updating critical software, such as the system kernel, restart your system to apply the changes. Consider including a custom reason in the system logs by using the option **--message=""**.
 
     $ sudo systemctl --message="Kernel update applied" reboot
+
+### Confirm system journal recorded the custom reboot message
+Use journalctl to view the custom reboot message after the system comes back up.
+
+    $ journalctl -b -1 | grep -i reboot
+
