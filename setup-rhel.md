@@ -30,3 +30,8 @@ Mapping the hostname to an IP address for local resolution acts as a local DNS c
 
     $ echo "192.168.1.5 server05.local server05" | sudo tee -a /etc/hosts
 
+### Register the system and subscribe for updates
+In order to keep your RHEL system up to date, you will need to register it with Red Hat. This will grant your system access to Red Hat's official repos and security updates. When prompted, enter your Red Hat credentials.
+
+    $ sudo subscription-manager register
+
