@@ -62,3 +62,8 @@ Use journalctl to view the custom reboot message after the system comes back up.
 
     $ journalctl -b -1 | grep -i reboot
 
+### Configure the firewall
+RHEL installs and enables a firewall by default. Confirm the firewall status is "running".
+
+    $ sudo firewall-cmd --state
+
