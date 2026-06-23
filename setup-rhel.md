@@ -67,3 +67,6 @@ RHEL installs and enables a firewall by default. Confirm the firewall status is 
 
     $ sudo firewall-cmd --state
 
+List all active rules to confirm the services allowed in the default zone.
+
+    $ sudo firewall-cmd --list-all
