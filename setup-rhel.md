@@ -25,3 +25,8 @@ If /etc/redhat-release is unavailable or outdated, you can use other commands to
     
     $ hostnamectl  # Displays the OS version along with other system details.
 
+### Map hostname to IP address for local resolution
+Mapping the hostname to an IP address for local resolution acts as a local DNS cache, allowing hostname lookups without querying external DNS servers. This is particularly useful for testing, development, and local network management.
+
+    $ echo "192.168.1.5 server05.local server05" | sudo tee -a /etc/hosts
+
