@@ -75,3 +75,13 @@ Query the list of named services that can be added to the firewall.
 
     $ sudo firewall-cmd --get-services
 
+### Configure the firewall
+Open firewall ports as needed by either invoking the service name or a custom port and protocol. Complete the firewall configuration by reloading the firewall service so the changes can take immediate effect.
+
+    $ sudo firewall-cmd --add-service=http --permanent
+    $ sudo firewall-cmd --add-service=https --permanent
+    $ sudo firewall-cmd --add-port=19132/udp --permanent
+    $ sudo firewall-cmd --add-port=25565/udp --permanent
+    $ sudo firewall-cmd --add-port=25565/tcp --permanent
+    $ sudo firewall-cmd --reload
+
