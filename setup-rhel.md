@@ -40,3 +40,8 @@ If your Red Hat credentials are valid and current, and the system was successful
 
     $ sudo subscription-manager status
 
+### Confirm Red Hat repository status
+Confirm the repositories "AppStream" and "BaseOS" registered before attemptintg to download updates.
+
+    $ sudo dnf repolist
+
