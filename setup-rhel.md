@@ -5,9 +5,24 @@
 ## Terminal Commands
 
 ### Display host date and time information
-**timedatectl** displays the current local (system) time, UTC, hardware clock (RTC) , time zone, and NTP synchronization status on systemd-based Linux systems. If no subcommand is provided to timedatectl, status is assumed by default. Ensure timekeeping is accurate. Maintaining accurate time ensures that your system operates reliably and securely in both local and networked environments.
+**timedatectl** displays the current local (system) time, UTC, hardware clock (RTC) , time zone, and NTP synchronization status on systemd-based Linux systems. If no subcommand is provided to timedatectl, status is assumed by default.
 
     $ timedatectl
+
+### Confirm accurate time
+Ensure timekeeping is accurate. Maintaining accurate time ensures that your system operates reliably and securely in both local and networked environments.
+
+Accurate time is critical for log correlation, certificate validation, and authentication protocols such as Kerberos.
+
+If your system time is inaccurate, first ensure the system has a charged CMOS battery and time is set correctly in its BIOS.
+
+Next, confirm the system timezone is correct. If it is not, list all available options, and then select the timezone closest to your system’s location.
+
+Finally, confirm time synchronization. RHEL uses chrony by default.
+
+    $ timedatectl list-timezones
+    $ sudo timedatectl set-timezone America/Los_Angeles
+    $ chronyc tracking
 
 ### Display hostname information
 **hostnamectl** displays the system’s hostname information along with related metadata such as chassis type, deployment environment, and machine ID. If no subcommand is provided to hostnamectl, status is assumed by default.
