@@ -7,3 +7,8 @@
 
     $ timedatectl
 
+### Hostnamectl
+**hostnamectl** displays the system’s hostname information along with related metadata such as chassis type, deployment environment, and machine ID. If no subcommand is provided to hostnamectl, status is assumed by default.
+
+    $ hostnamectl
+
