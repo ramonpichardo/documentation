@@ -12,3 +12,8 @@
 
     $ hostnamectl
 
+### Display installed RHEL version
+The cat command is used to display a file containing a single line of text that provides the release name and version of the installed RHEL operating system.
+
+    $cat /etc/redhat-release
+
