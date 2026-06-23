@@ -45,3 +45,8 @@ Confirm the repositories "AppStream" and "BaseOS" registered before attemptintg 
 
     $ sudo dnf repolist
 
+### Download and install updates
+Download and install all available updates.
+
+    $ sudo dnf -y update
+
