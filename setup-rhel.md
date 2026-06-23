@@ -35,3 +35,8 @@ In order to keep your RHEL system up to date, you will need to register it with 
 
     $ sudo subscription-manager register
 
+### Confirm Red Hat registration status
+If your Red Hat credentials are valid and current, and the system was successfully registered, the output should read “Overall Status: Registered”. This message confirms the system has valid entitlements and can now download updates.
+
+    $ sudo subscription-manager status
+
