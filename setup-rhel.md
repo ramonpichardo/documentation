@@ -50,3 +50,7 @@ Download and install all available updates.
 
     $ sudo dnf -y update
 
+### Restart system after major software updates
+After updating critical software, such as the system kernel, restart your system to apply the changes. Consider including a custom reason in the system logs by using the option **--message=""**.
+
+    $ sudo systemctl --message="Kernel update applied" reboot
