@@ -70,3 +70,8 @@ RHEL installs and enables a firewall by default. Confirm the firewall status is 
 List all active rules to confirm the services allowed in the default zone.
 
     $ sudo firewall-cmd --list-all
+
+Query the list of named services that can be added to the firewall.
+
+    $ sudo firewall-cmd --get-services
+
