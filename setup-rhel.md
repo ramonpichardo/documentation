@@ -1,5 +1,7 @@
 # Set up Red Hat Enterprise Linux (RHEL) 
 
+#### Applies to: RHEL 10.2
+
 ## Terminal Commands
 
 ### Display host date and time information
